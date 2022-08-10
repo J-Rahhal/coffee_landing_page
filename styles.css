@@ -6,19 +6,19 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
 .container{
     display: flex;
-    height: 100%;
+    height: 80vh;
     width: 100%;
 }
 
 .first-container {
     width: 50%;
-    height: 100%;
+    height: 80vh;
 }
 
 header {
@@ -42,7 +42,7 @@ header {
 }
 
 
-.menu {
+.nav {
     height: 100%;
     width: 60%;
     display: flex;
@@ -50,7 +50,7 @@ header {
     align-items: center;
 }
 
-.menu a {
+.nav a {
     text-decoration: none;
     color: black;
     font-style: italic;
@@ -76,8 +76,8 @@ header {
     cursor: pointer;
 }
 
-main {
-    height: 100vh;
+.main {
+    height: 70vh;
     width: 100%;
 
 }
@@ -85,8 +85,8 @@ main {
 .main-heading {
     height: 40vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .main-heading h1 {
@@ -96,15 +96,14 @@ main {
 
 .description {
     height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 16px;
 }
 
 .description p {
     margin:  0 auto;
     font-style: italic;
     letter-spacing: 0.6px;
+    text-align: center;
 }
 
 .button {
@@ -125,17 +124,103 @@ button {
 
 .second-container {
     width: 50%;
-    height: 100%;
+    height:80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .holding-cup{
     position: absolute;
     transform: scaleX(-1);
     top: -15px;
+    height: 80vh;
+    animation: fadein 5s;
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-family:'Merriweather Sans', sans-serif;
+    text-decoration: underline;
+}
+
+#menu {
     height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.menu {
+    height: 100vh;
+    width: 50%;
+}
+
+.menu-image {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-image img {
+    height: 100%;
+    width: 80%;
     opacity: 0.8;
+}
+
+.menu-pictures {
+    width: 50%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 20px;
+}
+
+
+.menu-pic img {
+    height: 400px;
+    width: 100%;
+    opacity: 0;
+    animation: fadein 10s;
+    animation-fill-mode: forwards;
+    box-shadow: 2px 5px 5px;
+}
+
+
+.two {
+    margin-top: 300px;
+
+}
+
+.one img {
+    animation-delay: 1s;
+}
+
+.two img {
+    animation-delay: 2s;
+}
+
+.three img {
+    animation-delay: 3s;
+}
+
+.four, .six {
+    position: relative;
+    top: -205px;
+}
+
+ .four img {
+    animation-delay: 4s;
+}
+
+.six img {
+    animation-delay: 5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

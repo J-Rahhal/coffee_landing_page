@@ -180,21 +180,38 @@ button {
     gap: 10px;
 }
 
+.ingredients {
+    position: relative;
+    height: 18%;
+    width: 90%;
+    bottom: 230px;
+}
+
+.ingredients p{
+    opacity: 0;
+    padding-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    height: 68%;
+
+}
+
+
+.ingredients p:hover {
+    opacity: 1;
+    color: white;
+    /* height: 70%; */
+    background-color: rgba(0,0 , 0, 0.2)
+}
 
 .menu-pic img {
-    height: 300px;
-    width: 80%;
+    height: 350px;
+    width: 90%;
     opacity: 0;
     animation: fadein 5s;
     animation-fill-mode: forwards;
     box-shadow: 2px 5px 5px;
-}
-
-.menu-pic img:hover {
-    height: 800px;
-    width: 200%;
-    position: relative;
-    z-index: 3;
 }
 
 .two {
@@ -206,48 +223,29 @@ button {
     animation-delay: 1s;
 }
 
-.one img:hover {
-    left :100px;
-}
 
 .two img {
     animation-delay: 2s;
 }
 
-.two img:hover {
-    right: 150px;
-    bottom: 300px;
-}
 
 .three img {
     animation-delay: 3s;
 }
 
-.three img:hover {
-    right: 500px;
-}
 
 .four, .six {
     position: relative;
-    top: -150px;
+    bottom: 350px;
 }
 
  .four img {
     animation-delay: 4s;
 }
 
-.four img:hover {
-    left: 200px;
-    bottom: 520px;
-}
 
 .six img {
     animation-delay: 5s;
-}
-
-.six img:hover {
-    right: 400px;
-    bottom: 520px
 }
 
 

@@ -182,18 +182,16 @@ button {
 
 .ingredients {
     position: relative;
-    height: 18%;
+    height: 60%;
     width: 90%;
-    bottom: 230px;
+    bottom: 200px;
 }
 
 .ingredients p{
     opacity: 0;
-    padding-top: 30px;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
-    height: 68%;
 
 }
 
@@ -201,8 +199,7 @@ button {
 .ingredients p:hover {
     opacity: 1;
     color: white;
-    /* height: 70%; */
-    background-color: rgba(0,0 , 0, 0.2)
+    background-color: rgba(0,0 , 0,0.3)
 }
 
 .menu-pic img {

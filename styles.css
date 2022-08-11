@@ -41,6 +41,11 @@ header {
     font-size: 30px;
 }
 
+.logo a {
+    text-decoration:  none;
+    color: black;
+}
+
 
 .nav {
     height: 100%;
